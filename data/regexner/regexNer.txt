@@ -1,0 +1,272 @@
+Chief Executive Officer of the Corporation	ROLE		1
+spiritual head of the Christian faith	ROLE		1
+Pope of the Roman Catholic church	ROLE		1
+chairmen and managing directors	ROLE		1
+Defender of the Holy Sepulchre	ROLE		1
+President and Chief Executive	ROLE		1
+Chairman and Chief Executive	ROLE		1
+Fuehrer and Reich Chancellor	ROLE		1
+Chief Executive Officer CEO	ROLE		1
+chief executive officer CEO	ROLE		1
+co-chief executive officer	ROLE		1
+corporate chief executives	ROLE		1
+Basileus of Constantinople	ROLE		1
+monarchical head of state	ROLE		1
+Reigning Sovereign Prince	ROLE		1
+Chief Executive Officers	ROLE		1
+Chief Executive Officer	ROLE		1
+Chief Executive officer	ROLE		1
+chief executive officer	ROLE		1
+Chief executive officer	ROLE		1
+acting black presidents	ROLE		1
+Imperator Romanus Sacer	ROLE		1
+successor of St. Peter	ROLE		1
+Roman Catholic emperor	ROLE		1
+Executive President	ROLE		1
+head of the executive	ROLE		1
+His Catholic Majesty	ROLE		1
+Managing Director MD	ROLE		1
+President-in-Waiting	ROLE		1
+presidential nominee	ROLE		1
+President of Austria	ROLE		1
+head of organization	ROLE		1
+Apostolic authority	ROLE		1
+chief queen consort	ROLE		1
+Imperator Romanorum	ROLE		1
+President for a day	ROLE		1
+executive president	ROLE		1
+executive director	ROLE		1
+executive officers	ROLE		1
+Holy Roman emperor	ROLE		1
+reigning empresses	ROLE		1
+Holy Roman Empress	ROLE		1
+Sovereign Princess	ROLE		1
+imperial sovereign	ROLE		1
+Commander-in-Chief	ROLE		1
+Commander in Chief	ROLE		1
+head of government	ROLE		1
+Holy Roman Emperor	ROLE		1
+Sovereign Pontiff	ROLE		1
+managing director	ROLE		1
+sovereign princes	ROLE		1
+Holy Roman Empire	ROLE		1
+empresses regnant	ROLE		1
+Sovereign Princes	ROLE		1
+golden-Horus-name	ROLE		1
+Acting Presidents	ROLE		1
+Reichs Chancellor	ROLE		1
+Reich Chancellors	ROLE		1
+Managing Director	ROLE		1
+Vicars of Christ	ROLE		1
+company director	ROLE		1
+Chief Executives	ROLE		1
+chief executives	ROLE		1
+reigning monarch	ROLE		1
+Maharani consort	ROLE		1
+princess regnant	ROLE		1
+Supreme director	ROLE		1
+Acting President	ROLE		1
+Bundespraesident	ROLE		1
+Supreme Director	ROLE		1
+acting President	ROLE		1
+Reichspraesident	ROLE		1
+prince-president	ROLE		1
+Reich Chancellor	ROLE		1
+chancellor-elect	ROLE		1
+Pontifex maximus	ROLE		1
+Illiterate popes	ROLE		1
+Sovereign Prince	ROLE		1
+acting president	ROLE		1
+supreme pontiff	ROLE		1
+vicar of Christ	ROLE		1
+Papal authority	ROLE		1
+Chief executive	ROLE		1
+Chief Executive	ROLE		1
+chief executive	ROLE		1
+Empress-consort	ROLE		1
+Child of Heaven	ROLE		1
+Empress regnant	ROLE		1
+empress regnant	ROLE		1
+Empress consort	ROLE		1
+Empress Regnant	ROLE		1
+sovereign queen	ROLE		1
+Chinese Emperor	ROLE		1
+empress consort	ROLE		1
+Reich President	ROLE		1
+President-elect	ROLE		1
+State President	ROLE		1
+President elect	ROLE		1
+founding father	ROLE		1
+President Elect	ROLE		1
+Supreme Pontiff	ROLE		1
+Reichspräsident	ROLE		1
+Chair of Peter	ROLE		1
+chief officers	ROLE		1
+reigning queen	ROLE		1
+Sacred Emperor	ROLE		1
+Queens regnant	ROLE		1
+reigning Queen	ROLE		1
+queens regnant	ROLE		1
+British royals	ROLE		1
+Masked Emperor	ROLE		1
+Head of States	ROLE		1
+Chancellorship	ROLE		1
+Heads of state	ROLE		1
+Roman Pontiff	ROLE		1
+Roman bishops	ROLE		1
+papal primate	ROLE		1
+chief officer	ROLE		1
+ruling queens	ROLE		1
+queen consort	ROLE		1
+Queen regnant	ROLE		1
+Son of Heaven	ROLE		1
+queen regnant	ROLE		1
+Head of State	ROLE		1
+U.S.President	ROLE		1
+Mr. President	ROLE		1
+now-President	ROLE		1
+head of state	ROLE		1
+His Holiness	ROLE		1
+Her Majestys	ROLE		1
+US-President	ROLE		1
+ex-president	ROLE		1
+co-president	ROLE		1
+Holy Father	ROLE		1
+chief queen	ROLE		1
+Dragon King	ROLE		1
+Chief Queen	ROLE		1
+chancellors	ROLE		1
+Chhatrapati	ROLE		1
+Roman Pope	ROLE		1
+co-Emperor	ROLE		1
+Rain Queen	ROLE		1
+High Queen	ROLE		1
+rain queen	ROLE		1
+sovereigns	ROLE		1
+King-elect	ROLE		1
+U.S. Pres.	ROLE		1
+presidents	ROLE		1
+Presidents	ROLE		1
+Chancellor	ROLE		1
+Saekonungr	ROLE		1
+chancellor	ROLE		1
+Patriarch	ROLE		1
+Holy Pope	ROLE		1
+president	ROLE		1
+pharaonic	ROLE		1
+imperator	ROLE		1
+Pharaonic	ROLE		1
+Sovereign	ROLE		1
+sovereign	ROLE		1
+President	ROLE		1
+prezydent	ROLE		1
+pontiffs	ROLE		1
+Pontiffs	ROLE		1
+director	ROLE		1
+Director	ROLE		1
+chairman	ROLE		1
+Chairman	ROLE		1
+emperors	ROLE		1
+Emperors	ROLE		1
+consorts	ROLE		1
+Maharaja	ROLE		1
+monarchs	ROLE		1
+pharaohs	ROLE		1
+maharani	ROLE		1
+Pharaohs	ROLE		1
+princess	ROLE		1
+Maharani	ROLE		1
+Princess	ROLE		1
+regnants	ROLE		1
+Governor	ROLE		1
+Antipope	ROLE		1
+Pontifex	ROLE		1
+Shahbanu	ROLE		1
+Modjadji	ROLE		1
+Mahārāja	ROLE		1
+Sea-King	ROLE		1
+El bachi	ROLE		1
+Pontiff	ROLE		1
+pontiff	ROLE		1
+manager	ROLE		1
+Pharaoh	ROLE		1
+Emperor	ROLE		1
+Empress	ROLE		1
+emperor	ROLE		1
+huangdi	ROLE		1
+monarch	ROLE		1
+princes	ROLE		1
+Monarch	ROLE		1
+reigned	ROLE		1
+regnant	ROLE		1
+Princes	ROLE		1
+pharaoh	ROLE		1
+Kaisers	ROLE		1
+leaders	ROLE		1
+empress	ROLE		1
+Consuls	ROLE		1
+consuls	ROLE		1
+Chogyal	ROLE		1
+Bishop	ROLE		1
+bishop	ROLE		1
+C.E.O.	ROLE		1
+co-CEO	ROLE		1
+mikado	ROLE		1
+regnal	ROLE		1
+haseki	ROLE		1
+Mikado	ROLE		1
+kaiser	ROLE		1
+queens	ROLE		1
+Queens	ROLE		1
+Sultan	ROLE		1
+diarch	ROLE		1
+rulers	ROLE		1
+leader	ROLE		1
+Prince	ROLE		1
+tianzi	ROLE		1
+sultan	ROLE		1
+Kaiser	ROLE		1
+Popes	ROLE		1
+popes	ROLE		1
+papal	ROLE		1
+Papal	ROLE		1
+Chief	ROLE		1
+chief	ROLE		1
+tenno	ROLE		1
+ruler	ROLE		1
+kings	ROLE		1
+queen	ROLE		1
+Queen	ROLE		1
+tsars	ROLE		1
+Tenno	ROLE		1
+czars	ROLE		1
+crown	ROLE		1
+Crown	ROLE		1
+Kings	ROLE		1
+rajah	ROLE		1
+POTUS	ROLE		1
+Fürst	ROLE		1
+Rajah	ROLE		1
+pope	ROLE		1
+Pope	ROLE		1
+Papa	ROLE		1
+CEO.	ROLE		1
+CEOs	ROLE		1
+head	ROLE		1
+Beys	ROLE		1
+King	ROLE		1
+king	ROLE		1
+Raja	ROLE		1
+czar	ROLE		1
+tsar	ROLE		1
+Czar	ROLE		1
+Tsar	ROLE		1
+tzar	ROLE		1
+Druk	ROLE		1
+Igwe	ROLE		1
+Tzar	ROLE		1
+CMD	ROLE		1
+CEO	ROLE		1
+Oba	ROLE		1
+Bey	ROLE		1
+Fon	ROLE		1

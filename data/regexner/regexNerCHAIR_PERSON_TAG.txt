@@ -1,0 +1,43 @@
+leader	CHAIR_PERSON_TAG		1
+Chief Executive officer	CHAIR_PERSON_TAG		1
+chief executive	CHAIR_PERSON_TAG		1
+Chief	CHAIR_PERSON_TAG		1
+Managing Director MD	CHAIR_PERSON_TAG		1
+President and Chief Executive	CHAIR_PERSON_TAG		1
+Chief executive	CHAIR_PERSON_TAG		1
+managing director	CHAIR_PERSON_TAG		1
+Chief Executive Officer of the Corporation	CHAIR_PERSON_TAG		1
+executive director	CHAIR_PERSON_TAG		1
+head	CHAIR_PERSON_TAG		1
+co-chief executive officer	CHAIR_PERSON_TAG		1
+Chief Executives	CHAIR_PERSON_TAG		1
+Chief Executive Officer	CHAIR_PERSON_TAG		1
+Chairman and Chief Executive	CHAIR_PERSON_TAG		1
+CMD	CHAIR_PERSON_TAG		1
+Chief executive officer	CHAIR_PERSON_TAG		1
+Chief Executive	CHAIR_PERSON_TAG		1
+company director	CHAIR_PERSON_TAG		1
+chief officer	CHAIR_PERSON_TAG		1
+manager	CHAIR_PERSON_TAG		1
+director	CHAIR_PERSON_TAG		1
+chief	CHAIR_PERSON_TAG		1
+corporate chief executives	CHAIR_PERSON_TAG		1
+head of organization	CHAIR_PERSON_TAG		1
+Director	CHAIR_PERSON_TAG		1
+chairman	CHAIR_PERSON_TAG		1
+Managing Director	CHAIR_PERSON_TAG		1
+CEO	CHAIR_PERSON_TAG		1
+co-CEO	CHAIR_PERSON_TAG		1
+Chairman	CHAIR_PERSON_TAG		1
+C.E.O.	CHAIR_PERSON_TAG		1
+chairmen and managing directors	CHAIR_PERSON_TAG		1
+chief executive officer CEO	CHAIR_PERSON_TAG		1
+chief officers	CHAIR_PERSON_TAG		1
+chief executive officer	CHAIR_PERSON_TAG		1
+executive officers	CHAIR_PERSON_TAG		1
+Chief Executive Officers	CHAIR_PERSON_TAG		1
+CEOs	CHAIR_PERSON_TAG		1
+Chief Executive Officer CEO	CHAIR_PERSON_TAG		1
+chief executives	CHAIR_PERSON_TAG		1
+CEO.	CHAIR_PERSON_TAG		1
+president	CHAIR_PERSON_TAG		1

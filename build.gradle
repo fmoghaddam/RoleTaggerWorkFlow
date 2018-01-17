@@ -1,0 +1,213 @@
+plugins {
+    id 'org.hidetake.ssh' version '2.8.0'
+}
+
+gradle.projectsEvaluated {
+    compileJava.dependsOn(copyConfiguration)
+}
+
+def environment = hasProperty('env') ? env : 'dev'
+
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+
+mainClassName="ise.roletagger.pipeline.PipeLine"
+
+applicationDefaultJvmArgs = ["-Xmx30g", "-d64", "-XX:+UseParallelGC", "-server"]
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+
+	compile fileTree(dir: 'libs', include: ['*.jar'])
+	
+	compile group: 'org.apache.poi', name: 'poi', version: '3.15'
+	compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.15'
+	compile group: 'log4j', name: 'log4j', version: '1.2.17'	
+    compile group: 'edu.stanford.nlp', name: 'stanford-corenlp', version: '3.7.0'
+	compile group: 'commons-io', name: 'commons-io', version: '2.5'
+	compile group: 'org.jsoup', name: 'jsoup', version: '1.10.3'
+	compile group: 'org.languagetool', name: 'languagetool', version: '2.0.1'
+	compile group: 'com.optimaize.languagedetector', name: 'language-detector', version: '0.6'
+		
+	compile group: 'org.json', name: 'json', version: '20160810'
+	compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.8.2'
+    testCompile 'junit:junit:4.12'
+    compile group: 'org.apache.commons', name: 'commons-compress', version: '1.15'
+}
+
+applicationDistribution.from("data") {
+    into "bin/data"
+}
+
+applicationDistribution.from("requirements") {
+    into "bin/requirements"
+}
+applicationDistribution.from("regexNerSolidRole.txt") {
+    into "bin"
+}
+
+ssh.settings {
+    dryRun = project.hasProperty('dryRun')
+}
+
+remotes {
+    server {
+        host = '10.10.4.10'
+        user = 'farshad'
+        identity = file("${System.properties['user.home']}/.ssh/id_rsa")
+    }
+}
+
+task deploy(dependsOn: installDist) {
+	doLast {
+    	ssh.run {
+	        session(remotes.server) {
+	         	execute 'rm -rf ./java/WikiPediaEntityDictionary'
+	            put from: './build/install/WikiPediaEntityDictionary', into: './java/'
+	            execute 'chmod +x ./java/WikiPediaEntityDictionary/bin/WikiPediaEntityDictionary'
+	            execute 'cd ./java/WikiPediaEntityDictionary/bin && ./WikiPediaEntityDictionary 50 /home/farshad/java/data/ /home/farshad/java/categoryData/article_categories_en.ttl'
+	            get from: './java/WikiPediaEntityDictionary/bin/log', into: '.'
+	        }
+    	}
+    }
+}
+
+task deployZip(dependsOn: distTar) {
+    doLast {
+    	ssh.run {
+	        session(remotes.server) {        
+	         	execute 'rm -rf ./java/RoleTaggerWorkFlow'         	
+	            put from: './build/distributions/RoleTaggerWorkFlow.tar', into: './java/'
+	            execute 'cd ./java && tar -xf RoleTaggerWorkFlow.tar'            
+	            execute 'cd ./java && chmod +x RoleTaggerWorkFlow/bin/RoleTaggerWorkFlow'
+	            execute 'cp -r ~/GeneralData/RoleTaggerWorkFlow/edu ./java/RoleTaggerWorkFlow/bin'
+	            execute 'cd ./java/RoleTaggerWorkFlow/bin && ./RoleTaggerWorkFlow'
+	            get from: './java/RoleTaggerWorkFlow/bin/data', into: '.'
+	        }
+    	}
+    }
+}
+
+task copyConfiguration() {
+	doLast {
+    	println "Target environment: $environment"
+	    copy {
+    	    from "src/main/environment/$environment"
+	        into "src/main/resources"
+        	include "**/*"
+    	}
+    }
+}
+
+jar {    
+   exclude('edu')
+}
+
+startScripts {
+   classpath += files('bin')
+   doLast {
+       def windowsScriptFile = file getWindowsScript()
+       def unixScriptFile    = file getUnixScript()
+       windowsScriptFile.text = windowsScriptFile.text.replace('%APP_HOME%\\lib\\bin', '%APP_HOME%\\bin')
+       unixScriptFile.text    = unixScriptFile.text.replace('$APP_HOME/lib/bin', '$APP_HOME/bin')
+   }
+}
+
+task deployOnlyJar(dependsOn: installDist) << {
+    ssh.run {
+        session(remotes.server) { 
+        		execute 'rm ./java/RoleTaggerWorkFlow/lib/RoleTaggerWorkFlow.jar'         	
+        		execute 'rm -rf ./java/RoleTaggerWorkFlow/bin/log'        		
+	        	put from: './build/install/RoleTaggerWorkFlow/lib/RoleTaggerWorkFlow.jar', into: './java/RoleTaggerWorkFlow/lib/'
+	        	put from: './build/install/RoleTaggerWorkFlow/bin/RoleTaggerWorkFlow', into: './java/RoleTaggerWorkFlow/bin/'
+	        	execute 'cd ./java && chmod +x RoleTaggerWorkFlow/bin/RoleTaggerWorkFlow'	            	                       
+	            execute 'cd ./java/RoleTaggerWorkFlow/bin && ./RoleTaggerWorkFlow'	            
+	            get from: './java/RoleTaggerWorkFlow/bin/data', into: '.'
+        }
+    }
+}
+
+task deployOnlyExe(dependsOn: installDist) << {
+    ssh.run {
+        session(remotes.server) {         	
+        	execute 'rm ./java/RoleTaggerWorkFlow/bin/RoleTaggerWorkFlow'
+        	execute 'rm -rf ./java/RoleTaggerWorkFlow/bin/log'
+            put from: './build/install/RoleTaggerWorkFlow/bin/RoleTaggerWorkFlow', into: './java/RoleTaggerWorkFlow/bin/'
+            execute 'cd ./java && chmod +x RoleTaggerWorkFlow/bin/RoleTaggerWorkFlow'
+            
+            execute 'rm ./java/RoleTaggerWorkFlow/lib/RoleTaggerWorkFlow.jar'
+        	put from: './build/install/RoleTaggerWorkFlow/lib/RoleTaggerWorkFlow.jar', into: './java/RoleTaggerWorkFlow/lib/'
+        				
+	       // execute 'cd ./java/RoleTaggerWorkFlow/bin && ./RoleTaggerWorkFlow'                       
+        }
+    }
+}
+
+task deployOnlyConfig() << {
+    ssh.run {
+        session(remotes.server) {         	
+        
+        	execute 'rm ./java/RoleTaggerWorkFlow/bin/RoleTaggerWorkFlow/config.properties'
+        	execute 'rm -rf ./java/RoleTaggerWorkFlow/bin/log'
+            put from: './src/main/resources/config.properties', into: './java/RoleTaggerWorkFlow/bin/'            
+            execute 'cd ./java/RoleTaggerWorkFlow/bin && ./RoleTaggerWorkFlow'            
+        }
+    }
+}
+
+task deployAllButLibs(dependsOn: installDist) << {
+    ssh.run {
+        session(remotes.server) {         	
+        	execute 'rm -rf ./java/RoleTaggerWorkFlow/bin/log'
+        	
+        	execute 'rm ./java/RoleTaggerWorkFlow/lib/RoleTaggerWorkFlow.jar'
+        	put from: './build/install/RoleTaggerWorkFlow/lib/RoleTaggerWorkFlow.jar', into: './java/RoleTaggerWorkFlow/lib/'
+        	    
+            
+            execute 'rm ./java/RoleTaggerWorkFlow/bin/RoleTaggerWorkFlow'
+            put from: './build/install/RoleTaggerWorkFlow/bin/RoleTaggerWorkFlow', into: './java/RoleTaggerWorkFlow/bin/'
+            execute 'cd ./java && chmod +x RoleTaggerWorkFlow/bin/RoleTaggerWorkFlow'
+
+            
+            //execute 'rm ./java/RoleTaggerWorkFlow/bin/RoleTaggerWorkFlow/config.properties'
+            //put from: './src/main/resources/config.properties', into: './java/RoleTaggerWorkFlow/bin/'
+
+            execute 'cd ./java/RoleTaggerWorkFlow/bin && ./RoleTaggerWorkFlow'
+        }
+    }
+}
+
+task deployFast(dependsOn: installDist) << {
+    ssh.run {
+        session(remotes.server) {         	
+        	execute 'rm -rf ./java/RoleTaggerWorkFlow'
+        	execute 'mkdir ./java/RoleTaggerWorkFlow'
+        	put from: './build/install/RoleTaggerWorkFlow/bin', into: './java/RoleTaggerWorkFlow'
+        	execute 'cd ./java && chmod +x RoleTaggerWorkFlow/bin/RoleTaggerWorkFlow'
+			execute 'cp -r ~/GeneralData/RoleTaggerWorkFlow/edu ./java/RoleTaggerWorkFlow/bin'
+			execute 'cp -r ~/GeneralData/RoleTaggerWorkFlow/lib ./java/RoleTaggerWorkFlow'
+			put from: './build/install/RoleTaggerWorkFlow/lib/RoleTaggerWorkFlow.jar', into: './java/RoleTaggerWorkFlow/lib/'
+            execute 'cd ./java/RoleTaggerWorkFlow/bin && ./RoleTaggerWorkFlow'
+        }
+    }
+}
+
+task deployFastNoExecute(dependsOn: installDist) << {
+    ssh.run {
+        session(remotes.server) {         	
+        	execute 'rm -rf ./java/RoleTaggerWorkFlow'
+        	execute 'mkdir ./java/RoleTaggerWorkFlow'
+        	put from: './build/install/RoleTaggerWorkFlow/bin', into: './java/RoleTaggerWorkFlow'
+        	execute 'cd ./java && chmod +x RoleTaggerWorkFlow/bin/RoleTaggerWorkFlow'
+			execute 'cp -r ~/GeneralData/RoleTaggerWorkFlow/edu ./java/RoleTaggerWorkFlow/bin'
+			execute 'cp -r ~/GeneralData/RoleTaggerWorkFlow/lib ./java/RoleTaggerWorkFlow'
+			put from: './build/install/RoleTaggerWorkFlow/lib/RoleTaggerWorkFlow.jar', into: './java/RoleTaggerWorkFlow/lib/'
+			execute 'cp ~/GeneralData/RoleTaggerWorkFlow/redirectPage ~/java/RoleTaggerWorkFlow/bin/data/'
+			            
+        }
+    }
+}

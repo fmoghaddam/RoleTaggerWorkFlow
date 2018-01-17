@@ -1,0 +1,37 @@
+Bishop	POPE_TAG		1
+pope	POPE_TAG		1
+Roman Pontiff	POPE_TAG		1
+Pontiff	POPE_TAG		1
+Popes	POPE_TAG		1
+bishop	POPE_TAG		1
+Vicars of Christ	POPE_TAG		1
+Roman bishops	POPE_TAG		1
+Supreme Pontiff	POPE_TAG		1
+spiritual head of the Christian faith	POPE_TAG		1
+Chair of Peter	POPE_TAG		1
+pontiffs	POPE_TAG		1
+Pontifex	POPE_TAG		1
+papal primate	POPE_TAG		1
+papal	POPE_TAG		1
+supreme pontiff	POPE_TAG		1
+Pope of the Roman Catholic church	POPE_TAG		1
+Patriarch	POPE_TAG		1
+Pontifex maximus	POPE_TAG		1
+Papal authority	POPE_TAG		1
+His Holiness	POPE_TAG		1
+Holy Father	POPE_TAG		1
+Sovereign Pontiff	POPE_TAG		1
+Illiterate popes	POPE_TAG		1
+Roman Pope	POPE_TAG		1
+His Catholic Majesty	POPE_TAG		1
+popes	POPE_TAG		1
+Holy Pope	POPE_TAG		1
+Papa	POPE_TAG		1
+Apostolic authority	POPE_TAG		1
+pontiff	POPE_TAG		1
+vicar of Christ	POPE_TAG		1
+Pope	POPE_TAG		1
+Pontiffs	POPE_TAG		1
+successor of St. Peter	POPE_TAG		1
+Antipope	POPE_TAG		1
+Papal	POPE_TAG		1

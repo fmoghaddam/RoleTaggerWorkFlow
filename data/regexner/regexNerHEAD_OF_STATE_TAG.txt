@@ -1,0 +1,60 @@
+acting black presidents	HEAD_OF_STATE_TAG		1
+leader	HEAD_OF_STATE_TAG		1
+acting President	HEAD_OF_STATE_TAG		1
+chancellor-elect	HEAD_OF_STATE_TAG		1
+Supreme director	HEAD_OF_STATE_TAG		1
+presidents	HEAD_OF_STATE_TAG		1
+US-President	HEAD_OF_STATE_TAG		1
+Commander-in-Chief	HEAD_OF_STATE_TAG		1
+President Elect	HEAD_OF_STATE_TAG		1
+Reichs Chancellor	HEAD_OF_STATE_TAG		1
+Reichspräsident	HEAD_OF_STATE_TAG		1
+President	HEAD_OF_STATE_TAG		1
+acting president	HEAD_OF_STATE_TAG		1
+El bachi	HEAD_OF_STATE_TAG		1
+Reich President	HEAD_OF_STATE_TAG		1
+co-president	HEAD_OF_STATE_TAG		1
+Acting Presidents	HEAD_OF_STATE_TAG		1
+Fuehrer and Reich Chancellor	HEAD_OF_STATE_TAG		1
+Head of State	HEAD_OF_STATE_TAG		1
+executive president	HEAD_OF_STATE_TAG		1
+POTUS	HEAD_OF_STATE_TAG		1
+Consuls	HEAD_OF_STATE_TAG		1
+head of the executive	HEAD_OF_STATE_TAG		1
+Commander in Chief	HEAD_OF_STATE_TAG		1
+Head of States	HEAD_OF_STATE_TAG		1
+Reichspraesident	HEAD_OF_STATE_TAG		1
+Governor	HEAD_OF_STATE_TAG		1
+chancellor	HEAD_OF_STATE_TAG		1
+Chancellorship	HEAD_OF_STATE_TAG		1
+Mr. President	HEAD_OF_STATE_TAG		1
+Reich Chancellor	HEAD_OF_STATE_TAG		1
+prezydent	HEAD_OF_STATE_TAG		1
+Bundespraesident	HEAD_OF_STATE_TAG		1
+chancellors	HEAD_OF_STATE_TAG		1
+Chancellor	HEAD_OF_STATE_TAG		1
+Supreme Director	HEAD_OF_STATE_TAG		1
+President of Austria	HEAD_OF_STATE_TAG		1
+presidential nominee	HEAD_OF_STATE_TAG		1
+President elect	HEAD_OF_STATE_TAG		1
+State President	HEAD_OF_STATE_TAG		1
+head	HEAD_OF_STATE_TAG		1
+Heads of state	HEAD_OF_STATE_TAG		1
+President-elect	HEAD_OF_STATE_TAG		1
+now-President	HEAD_OF_STATE_TAG		1
+ex-president	HEAD_OF_STATE_TAG		1
+Executive President	HEAD_OF_STATE_TAG		1
+head of government	HEAD_OF_STATE_TAG		1
+Reich Chancellors	HEAD_OF_STATE_TAG		1
+U.S.President	HEAD_OF_STATE_TAG		1
+prince-president	HEAD_OF_STATE_TAG		1
+consuls	HEAD_OF_STATE_TAG		1
+Presidents	HEAD_OF_STATE_TAG		1
+President for a day	HEAD_OF_STATE_TAG		1
+President-in-Waiting	HEAD_OF_STATE_TAG		1
+Acting President	HEAD_OF_STATE_TAG		1
+Chairman	HEAD_OF_STATE_TAG		1
+head of state	HEAD_OF_STATE_TAG		1
+U.S. Pres.	HEAD_OF_STATE_TAG		1
+founding father	HEAD_OF_STATE_TAG		1
+president	HEAD_OF_STATE_TAG		1

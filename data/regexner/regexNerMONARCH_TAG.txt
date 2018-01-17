@@ -1,0 +1,137 @@
+leader	MONARCH_TAG		1
+tzar	MONARCH_TAG		1
+mikado	MONARCH_TAG		1
+Roman Catholic emperor	MONARCH_TAG		1
+British royals	MONARCH_TAG		1
+tenno	MONARCH_TAG		1
+High Queen	MONARCH_TAG		1
+empresses regnant	MONARCH_TAG		1
+Queen regnant	MONARCH_TAG		1
+Empress	MONARCH_TAG		1
+rulers	MONARCH_TAG		1
+maharani	MONARCH_TAG		1
+princess	MONARCH_TAG		1
+tsars	MONARCH_TAG		1
+crown	MONARCH_TAG		1
+Chogyal	MONARCH_TAG		1
+Reigning Sovereign Prince	MONARCH_TAG		1
+czars	MONARCH_TAG		1
+Maharaja	MONARCH_TAG		1
+Czar	MONARCH_TAG		1
+pharaonic	MONARCH_TAG		1
+imperator	MONARCH_TAG		1
+emperor	MONARCH_TAG		1
+Tsar	MONARCH_TAG		1
+sovereign princes	MONARCH_TAG		1
+Imperator Romanus Sacer	MONARCH_TAG		1
+Holy Roman emperor	MONARCH_TAG		1
+Mikado	MONARCH_TAG		1
+queen	MONARCH_TAG		1
+Holy Roman Emperor	MONARCH_TAG		1
+reigning monarch	MONARCH_TAG		1
+Queens regnant	MONARCH_TAG		1
+Saekonungr	MONARCH_TAG		1
+Sovereign Prince	MONARCH_TAG		1
+huangdi	MONARCH_TAG		1
+regnal	MONARCH_TAG		1
+Kaiser	MONARCH_TAG		1
+reigning Queen	MONARCH_TAG		1
+Fürst	MONARCH_TAG		1
+queen consort	MONARCH_TAG		1
+Maharani consort	MONARCH_TAG		1
+Shahbanu	MONARCH_TAG		1
+Modjadji	MONARCH_TAG		1
+Princes	MONARCH_TAG		1
+Pharaonic	MONARCH_TAG		1
+Pharaohs	MONARCH_TAG		1
+Her Majestys	MONARCH_TAG		1
+pharaohs	MONARCH_TAG		1
+rain queen	MONARCH_TAG		1
+reigning queen	MONARCH_TAG		1
+Defender of the Holy Sepulchre	MONARCH_TAG		1
+Sea-King	MONARCH_TAG		1
+Queens	MONARCH_TAG		1
+sovereigns	MONARCH_TAG		1
+Sultan	MONARCH_TAG		1
+Crown	MONARCH_TAG		1
+Empress regnant	MONARCH_TAG		1
+Sovereign	MONARCH_TAG		1
+consorts	MONARCH_TAG		1
+princes	MONARCH_TAG		1
+Bey	MONARCH_TAG		1
+imperial sovereign	MONARCH_TAG		1
+chief queen	MONARCH_TAG		1
+Chhatrapati	MONARCH_TAG		1
+King-elect	MONARCH_TAG		1
+reigning empresses	MONARCH_TAG		1
+Sovereign Princes	MONARCH_TAG		1
+Imperator Romanorum	MONARCH_TAG		1
+Tzar	MONARCH_TAG		1
+empress regnant	MONARCH_TAG		1
+Masked Emperor	MONARCH_TAG		1
+Holy Roman Empire	MONARCH_TAG		1
+leaders	MONARCH_TAG		1
+chief queen consort	MONARCH_TAG		1
+reigned	MONARCH_TAG		1
+ruler	MONARCH_TAG		1
+Empress-consort	MONARCH_TAG		1
+pharaoh	MONARCH_TAG		1
+Emperor	MONARCH_TAG		1
+Prince	MONARCH_TAG		1
+King	MONARCH_TAG		1
+co-Emperor	MONARCH_TAG		1
+Rain Queen	MONARCH_TAG		1
+emperors	MONARCH_TAG		1
+Empress Regnant	MONARCH_TAG		1
+sovereign	MONARCH_TAG		1
+Basileus of Constantinople	MONARCH_TAG		1
+Beys	MONARCH_TAG		1
+monarchs	MONARCH_TAG		1
+Fon	MONARCH_TAG		1
+king	MONARCH_TAG		1
+Queen	MONARCH_TAG		1
+Monarch	MONARCH_TAG		1
+Empress consort	MONARCH_TAG		1
+kings	MONARCH_TAG		1
+Maharani	MONARCH_TAG		1
+haseki	MONARCH_TAG		1
+empress	MONARCH_TAG		1
+Igwe	MONARCH_TAG		1
+ruling queens	MONARCH_TAG		1
+Kaisers	MONARCH_TAG		1
+Tenno	MONARCH_TAG		1
+kaiser	MONARCH_TAG		1
+Sovereign Princess	MONARCH_TAG		1
+diarch	MONARCH_TAG		1
+Princess	MONARCH_TAG		1
+czar	MONARCH_TAG		1
+tsar	MONARCH_TAG		1
+Son of Heaven	MONARCH_TAG		1
+princess regnant	MONARCH_TAG		1
+Kings	MONARCH_TAG		1
+Sacred Emperor	MONARCH_TAG		1
+monarch	MONARCH_TAG		1
+Oba	MONARCH_TAG		1
+golden-Horus-name	MONARCH_TAG		1
+queen regnant	MONARCH_TAG		1
+Rajah	MONARCH_TAG		1
+Chief Queen	MONARCH_TAG		1
+Holy Roman Empress	MONARCH_TAG		1
+empress consort	MONARCH_TAG		1
+regnants	MONARCH_TAG		1
+Mahārāja	MONARCH_TAG		1
+Emperors	MONARCH_TAG		1
+Raja	MONARCH_TAG		1
+Druk	MONARCH_TAG		1
+Pharaoh	MONARCH_TAG		1
+Dragon King	MONARCH_TAG		1
+regnant	MONARCH_TAG		1
+sovereign queen	MONARCH_TAG		1
+tianzi	MONARCH_TAG		1
+rajah	MONARCH_TAG		1
+sultan	MONARCH_TAG		1
+Chinese Emperor	MONARCH_TAG		1
+queens	MONARCH_TAG		1
+monarchical head of state	MONARCH_TAG		1
+Child of Heaven	MONARCH_TAG		1
+queens regnant	MONARCH_TAG		1
