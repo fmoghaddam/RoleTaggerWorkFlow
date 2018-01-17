@@ -1,0 +1,18 @@
+/.gradle/
+/.settings/
+/build/
+/bin/
+.project
+.classpath
+/log/
+/wikipediafiles/
+/src/main/resources/edu
+/data_ORIGINAL
+/data
+/category
+/stanfordmodels
+/data temp backup/
+/crfsuite-0.12
+/result/
+/extra folders/
+redirectPage
