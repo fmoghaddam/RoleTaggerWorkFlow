@@ -16,8 +16,10 @@ import org.apache.commons.lang3.StringUtils;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import edu.stanford.nlp.ling.Word;
 import ise.roletagger.datasetconvertor.TagParser;
 import ise.roletagger.model.Category;
+import ise.roletagger.model.Global;
 import ise.roletagger.model.Token;
 import ise.roletagger.util.MyStandfordCoreNLPRegex;
 import ise.roletagger.util.MyStanfordCoreNLP;
@@ -103,6 +105,9 @@ public class SentenceToFeature {
 		try {
 			if (isPositive) {
 				newEasyWayOfAddingLabel(result, taggedLine,tokens);
+				//TODO: This function should be used. Above function is wrong
+				// But as I used it in the ESWC submission I don't want to change it now
+				//addPositivLabelsKeepHeadRoleOnly(result, taggedLine);
 			} else {
 				addNegativeLabels(result);
 			}
@@ -113,6 +118,38 @@ public class SentenceToFeature {
 		//addNewFeatures(result);
 		//addP1IsInCap(result);
 		return result;
+	}
+	
+	private static void addPositivLabelsKeepHeadRoleOnly(Map<Integer, Map<String, String>> result, String taggedLine) {
+
+		int wordCount = 0;
+		taggedLine = Global.removeAnchorTextTag(taggedLine);
+		taggedLine = Global.removeRolePhraseTag(taggedLine);
+		try {
+			final List<Word> tokens_words = MyStanfordCoreNLP.tokenize(taggedLine);
+			boolean inside = false;
+			for (Word w : tokens_words) {
+				if (!inside) {
+					if (w.value().contains(Global.getHeadRoleStartTag())) {
+						inside = true;
+						continue;
+					} else if (w.value().contains(Global.getHeadRoleEndTag())) {
+						continue;
+					} else {
+						result.get(wordCount++).put("TAG", "O");
+					}
+				} else {
+					if (w.value().contains(Global.getHeadRoleEndTag())) {
+						inside = false;
+						continue;
+					} else {
+						result.get(wordCount++).put("TAG", "ROLE");
+					}
+				}
+			}
+		} catch (NullPointerException e) {
+			throw e;
+		}
 	}
 
 	private static void addP1IsInCap(Map<Integer, Map<String, String>> result) {
